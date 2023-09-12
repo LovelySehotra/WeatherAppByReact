@@ -67,3 +67,5 @@ The weather data fetching logic is encapsulated in a custom hook called useWeath
 * JavaScript
 * HTML
 * CSS (Tailwind CSS used for styling)
+### Credits
+Weather data provided by Weather by API Ninjas
