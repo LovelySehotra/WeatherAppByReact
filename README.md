@@ -9,7 +9,7 @@ This Weather App allows users to check the weather conditions for a specific cit
 - Display sunrise and sunset times.
 - Handle loading and error states gracefully.
 - Easy-to-use interface with a search input and a "Get Weather" button.
-### Installation
+### Workflow and Execution
 
 1. Clone the project
 
