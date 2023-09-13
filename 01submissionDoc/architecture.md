@@ -5,6 +5,7 @@
 ### Introduction
 
 The Weather App is a web application designed to provide users with up-to-date weather information for a specific city. This architecture document outlines the key components, data flow, and technologies used in the Weather App.
+![Alt text](image.png)
 
 ### Architecture Overview
 

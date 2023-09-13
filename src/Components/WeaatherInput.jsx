@@ -12,7 +12,7 @@ function WeatherApp() {
     return (
         <>
     
-        <div className='flex flex-col items-center bg-slate-500 h-screen'>
+        <div className="flex flex-col lg:justify-center items-center  h-screen lg:bg-[url('./assets/bgImage.jpg')] bg-[length:100vw_100vh] bg-no-repeat ">
             <div className=' mt-8 rounded-xl'>
                 <input
                     className='w-96 h-10 border bg-slate-300  border-black rounded-xl mr-6 p-5'
@@ -23,13 +23,13 @@ function WeatherApp() {
                 />
                 <button className=' bg-sky-400 rounded-md border border-sky-400 h-9 w-36' onClick={handleGetWeather}>Get Weather</button>
             </div>
-            {loading && <p>Loading...</p>}
+            {loading && <p className="tracking-wider text-xl text-center">Loading...</p>}
             {error && <p>Error: {error.message}</p>}
             {weatherData && (
-                <div className="flex flex-col text-black justify-center gap-3 ">
+                <div className=" lg:flex flex-col text-black justify-center gap-3 sm:flex ">
                     <h1 className=" font-extrabold tracking-wider text-xl text-center py-3"><span ></span>{city}'s Weather</h1>
                     <main>
-                        <div className=" flex gap-3 justify-evenly py-4 my-4 ">
+                        <div className=" lg:flex gap-3 justify-evenly py-4 my-4 ">
                             <div className="bg-white rounded-xl">
                                 <div className="rounded-xl border border-sky-400 w-96 h-64 flex flex-col  py-0">
                                     <div className="bg-sky-400 rounded-md ">
@@ -66,7 +66,7 @@ function WeatherApp() {
                                                 Feel Like is <span >{weatherData.feels_like}</span>
                                             </li>
                                         </ul>
-                                        <button type="button" className="bg-sky-400 rounded-md border border-sky-400">{city}</button>
+                                        {/* <button type="button" className="bg-sky-400 rounded-md border border-sky-400">{city}</button> */}
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ function WeatherApp() {
 
                         </div>
 
-                        <h2 className="bg-sky-400 rounded-md text-center">Weather of Some Area</h2>
+                      
 
 
                     </main>

@@ -1,4 +1,5 @@
 # WEATHER APP
+![Alt text](image-1.png)
 ## Description
 This Weather App allows users to check the weather conditions for a specific city. It fetches weather data from the Weather by API Ninjas API and displays it in a user-friendly interface.
 ## Feature
