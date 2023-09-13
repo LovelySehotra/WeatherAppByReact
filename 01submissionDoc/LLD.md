@@ -35,6 +35,9 @@
 ##### `handleGetWeather(): void`
 - Functionality:
   - Calls the `getWeather` function from the custom hook with the current `city` value to fetch weather data.
+#### `formatTime(timestamp:number):timeString`
+- Functionality:
+  - Call the `formatTime` function for convert timestamp of `sunrise` and `sunset` into actual time.
 
 #### Render Method
 - Displays the following UI elements:
