@@ -8,6 +8,17 @@ function WeatherApp() {
     const handleGetWeather = () => {
         getWeather(city);
     };
+    function formatTime(timestamp) {
+        const date = new Date(timestamp * 1000); // Convert the timestamp to milliseconds
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
+      
+        // Format the time in 12-hour format with AM/PM
+        const timeString = `${hours % 12 || 12}:${minutes < 10 ? '0' : ''}${minutes} ${hours >= 12 ? 'PM' : 'AM'}`;
+      
+        return timeString;
+      }
+      
 
     return (
         <>
@@ -80,10 +91,10 @@ function WeatherApp() {
                                         <ul className="list-unstyled mt-3 mb-4">
 
                                             <li>
-                                                Sunrise is <span id="min_temp">{weatherData.sunrise}</span>
+                                                Sunrise is <span id="min_temp">{formatTime(weatherData.sunrise)}</span>
                                             </li>
                                             <li>
-                                                SunSet is <span id="max_temp">{weatherData.sunset}</span>
+                                                SunSet is <span id="max_temp">{formatTime(weatherData.sunset)}</span>
                                             </li>
                                         </ul>
                                         
