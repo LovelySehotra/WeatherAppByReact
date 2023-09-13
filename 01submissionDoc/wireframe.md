@@ -11,12 +11,12 @@ The wireframe document outlines the layout and structure of the Weather App's us
 ##### 1. Landing Page
 
 - **Input Section**: Displays an input field for entering the city name and a "Get Weather" button for initiating the weather data retrieval.
-  ![Alt text](image-4.png)
+  ![Alt text](image-7.png)
 
 ##### 2. Loading State
 
 - **Loading Indicator**: Shows a loading indicator while the app fetches weather data.
- ![Alt text](image.png)
+ ![Alt text](image-2.png)
 
 
 #### 3. Error State
@@ -26,7 +26,7 @@ The wireframe document outlines the layout and structure of the Weather App's us
 ##### 4. Weather Information Display
 
 - **Weather Information**: Presents weather information for the selected city, including temperature, humidity, and wind details.
- ![Alt text](image-6.png)
+ ![Alt text](image-1.png)
 
 
 
@@ -34,7 +34,7 @@ The wireframe document outlines the layout and structure of the Weather App's us
 ##### 5``. Styling and UI Elements
 
 - **UI Elements**: Wireframes include buttons, text inputs, and card components styled using Tailwind CSS.
-![Alt text](image-3.png)
+![Alt text](image-8.png)
 
 
 

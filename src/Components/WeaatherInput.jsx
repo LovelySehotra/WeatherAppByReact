@@ -51,10 +51,10 @@ function WeatherApp() {
                                         <ul className="list-unstyled mt-3 mb-4">
 
                                             <li>
-                                                Min Temperature is <span >{weatherData.min_temp}</span>
+                                                Min Temperature is : <span >{weatherData.min_temp}&deg;C</span>
                                             </li>
                                             <li>
-                                                Max Temperature is <span >{weatherData.max_temp}</span>
+                                                Max Temperature is : <span >{weatherData.max_temp}&deg;C</span>
                                             </li>
                                         </ul>
                                         
@@ -67,14 +67,14 @@ function WeatherApp() {
                                         <h4 className="text-center tracking-wider text-xl py-3">Humidity</h4>
                                     </div>
                                     <div className="card-body text-center flex flex-col gap-8 pt-1 text-xl">
-                                        <h1 className="card-title pricing-card-title"> <span id="temp"></span>{weatherData.humidity}</h1>
+                                        <h1 className="card-title pricing-card-title"> <span id="temp"></span>{weatherData.humidity}%</h1>
                                         <ul className="list-unstyled mt-3 mb-4">
 
                                             <li>
-                                                Cloud Precipitation is <span >{weatherData.cloud_pct}</span>
+                                                Cloud Precipitation is : <span >{weatherData.cloud_pct}%</span>
                                             </li>
                                             <li>
-                                                Feel Like is <span >{weatherData.feels_like}</span>
+                                                Feel Like is : <span >{weatherData.feels_like}&deg;C</span>
                                             </li>
                                         </ul>
                                         {/* <button type="button" className="bg-sky-400 rounded-md border border-sky-400">{city}</button> */}
@@ -87,14 +87,14 @@ function WeatherApp() {
                                         <h4 className="text-center tracking-wider text-xl py-3">Wind</h4>
                                     </div>
                                     <div className="card-body text-center flex flex-col gap-8 pt-1 text-xl">
-                                        <h1 className="card-title pricing-card-title"> <span id="temp"></span>{weatherData.wind_speed}Km/H</h1>
+                                        <h1 className="card-title pricing-card-title"> <span id="temp"></span>{weatherData.wind_speed}mph</h1>
                                         <ul className="list-unstyled mt-3 mb-4">
 
                                             <li>
-                                                Sunrise is <span id="min_temp">{formatTime(weatherData.sunrise)}</span>
+                                                Sunrise is : <span id="min_temp">{formatTime(weatherData.sunrise)}</span>
                                             </li>
                                             <li>
-                                                SunSet is <span id="max_temp">{formatTime(weatherData.sunset)}</span>
+                                                SunSet is : <span id="max_temp">{formatTime(weatherData.sunset)}</span>
                                             </li>
                                         </ul>
                                         
